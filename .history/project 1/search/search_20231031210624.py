@@ -102,9 +102,6 @@ def depthFirstSearch(problem: SearchProblem):
             closed_stack.push(X)
             break
         else:
-            children_of_X = problem.getSuccessors(X[0])
-            closed_stack.push(X)
-        
 
 
 
