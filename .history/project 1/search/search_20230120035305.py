@@ -87,9 +87,6 @@ def depthFirstSearch(problem: SearchProblem):
     print("Start's successors:", problem.getSuccessors(problem.getStartState()))
     """
     "*** YOUR CODE HERE ***"
-    open_stack = util.Stack()
-    open_stack.push((problem.getStartState(),'origin',0))
-    define 
     util.raiseNotDefined()
 
 def breadthFirstSearch(problem: SearchProblem):
