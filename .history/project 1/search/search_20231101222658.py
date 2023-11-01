@@ -144,18 +144,7 @@ def breadthFirstSearch(problem: SearchProblem):
 
     frontier = Queue()
     frontier.push((currState, currPath))
-    explored = set()
-    while not frontier.isEmpty():
-        currState, currPath = frontier.pop()
-    if problem.isGoalState(currState):
-            return currPath
-    explored.add(currState)
-    frontierStates = [ t[0] for t in frontier.list ]
-    for s in problem.getSuccessors(currState):
-            if s[0] not in explored and s[0] not in frontierStates:
-                   frontier.push( (s[0], currPath + [s[1]]) )
-
-    return []
+    
     util.raiseNotDefined()
 
 def uniformCostSearch(problem: SearchProblem):
