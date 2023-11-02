@@ -389,14 +389,7 @@ def cornersHeuristic(state: Any, problem: CornersProblem):
         cornerDistance = manhattanDistance(state[0], corners[i]) 
         if cornerDistance > maxCornerDistance:
             maxCornerDistance = cornerDistance
-        return maxCornerDistance
-    
-    def manhhattanDistance(posA, posB):
-        return abs(posA[0] - posB[0]) + abs(posA[1] - posB[1])
-    
-    def euclideanDistance( posA, posB ):
-         return ( (posA[0] - posB[0])**2 + (posA[1] - posB[1])**2 )**0.5
-    
+
     return 0 # Default to trivial solution
 
 class AStarCornersAgent(SearchAgent):
