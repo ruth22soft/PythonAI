@@ -546,9 +546,7 @@ class ClosestDotSearchAgent(SearchAgent):
             self.costFn = lambda x:1
             self.visiteed, self.visitedList, self._expanded = {}, [], 0
 
-        def isGoalState(self, state):
-            x,y = state
-            return self.foo[x][y]
+        def
         util.raiseNotDefined()
 
 class AnyFoodSearchProblem(PositionSearchProblem):

@@ -544,11 +544,8 @@ class ClosestDotSearchAgent(SearchAgent):
             self.walls = gameState.getWalls()
             self.startState = gameState.getPacmanPosition()
             self.costFn = lambda x:1
-            self.visiteed, self.visitedList, self._expanded = {}, [], 0
+            self.visiteed, self.visitedList, self._expanded = {}, []
 
-        def isGoalState(self, state):
-            x,y = state
-            return self.foo[x][y]
         util.raiseNotDefined()
 
 class AnyFoodSearchProblem(PositionSearchProblem):
